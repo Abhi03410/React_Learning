@@ -1,0 +1,14 @@
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+
+    h2{
+        color:rgb(10, 71, 71);
+    }
+
+    p{
+        font-size: 17px;
+        color:rgb(236, 159, 45);
+    }
+}
