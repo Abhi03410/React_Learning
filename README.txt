@@ -133,6 +133,95 @@ Select a framework: React
 Select a variant: JavaScript
 
 
+1.JSX:-
+
+without using div does not showing data in UI
+
+return <div>
+     <h1>Hello,Abhishek</h1>
+</div>
+
+JSX मध्ये JavaScript value/expression लिहिण्यासाठी { } वापरतो.
+
+js simple class using this styling and apply js logic:-
+
+<div class="Card"/>
+
+React is different:-
+ <div className="card">
+
+
+style={{}}:-
+
+<h1 style={{ color: "red" }}>
+  Hello
+</h1>
+
+इथे दोन {} दिसत आहेत.
+
+समजून घ्या:
+
+style={ JavaScript object }
+          ↓
+       { color: "red" }
+
+2. Fragments <> </>
+
+आपल्याला multiple elements return करायचे आहेत, पण extra <div> नको असेल तर Fragment वापरतो.
+
+Without Fragment
+function App() {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </div>
+  );
+}
+
+इथे unnecessary div तयार होतो.
+
+Fragment
+function App() {
+  return (
+    <>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+    </>
+  );
+}
+
+<> </> ला Fragment syntax म्हणतात.
+
+
+3.Dynamic class
+
+हे पुढे state/conditional rendering मध्ये जास्त वापराल:
+
+<div className={isActive ? "active" : "inactive"}>
+  User
+</div>
+
+4.for → htmlFor
+
+simple html:-
+
+<label for="email">
+  Email
+</label>
+
+<input id="email">
+
+React :-
+
+<label htmlFor="email">
+  Email
+</label>
+
+<input id="email" />
+
+
+
 
 
 
